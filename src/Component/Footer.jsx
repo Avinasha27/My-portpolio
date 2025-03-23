@@ -2,6 +2,7 @@ import { FaFacebook, FaHome, FaMapMarkerAlt } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
+import { FaInstagram } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { PiLinkSimpleBold } from "react-icons/pi";
 import React, { useRef, useState } from "react";
@@ -20,10 +21,10 @@ const Footer = () => {
 
 		emailjs
 			.sendForm(
-				"service_yev8zd8",
-				"template_6xulcht",
+				"service_ydjef3f",
+				"template_bzxvw0i",
 				form.current,
-				"1basqFKWSgsXJyEOu"
+				"VH8w1lBXyhAZ55QVl"
 			)
 			.then(
 				(result) => {
@@ -59,31 +60,39 @@ const Footer = () => {
 					className="flex gap-2 text-xl items-center"
 				>
 					<PiLinkSimpleBold
-						className="text-[#61CE70]"
+						className="text-[#89b02d]"
 						size={40}
 					></PiLinkSimpleBold>
 					<div className="flex flex-col">
 						<h1 className=" mt-8  mb-2">Socials Links</h1>
 						<div className=" text-xl md:text-base flex md:flex-row gap-5  items-center">
 							<a target="_blank"
-								href="https://www.facebook.com/mdmustafiz.rahman.988/"
+								href="https://www.facebook.com/profile.php?id=100071356753716"
 								className="flex  items-center gap-2"
 							>
-								<FaFacebook className="text-[#61CE70]" />
+								<FaFacebook className="text-[#89b02d]" />
 								<span className="hidden md:block">Facebook</span>
 							</a>
 							<a target="_blank"
-								href="https://www.linkedin.com/in/mdmustafiz8260/"
+								href="https://www.instagram.com/avinash4_27/"
+								className="flex  items-center gap-2"
+							>
+								<FaInstagram className="text-[#89b02d]" />
+								<span className="hidden md:block">Instagram</span>
+							</a>
+
+							<a target="_blank"
+								href="https://www.linkedin.com/in/avinash-m-b87b40242/"
 								className="flex items-center gap-2"
 							>
-								<FaLinkedin className="text-[#61CE70]" />
+								<FaLinkedin className="text-[#89b02d]" />
 								<span className="hidden md:block">LinkedIn</span>
 							</a>
 							<a target="_blank"
-								href="https://github.com/Mustafiz82"
+								href="https://github.com/Avinasha27/dhoni"
 								className="flex items-center gap-2"
 							>
-								<FaGithub className="text-[#61CE70]" /> <span className="hidden md:block">Github</span>
+								<FaGithub className="text-[#89b02d]" /> <span className="hidden md:block">Github</span>
 							</a>
 						</div>
 					</div>
@@ -93,25 +102,25 @@ const Footer = () => {
 
 					className="flex gap-2 my-10 items-center  text-2xl"
 				>
-					<MdEmail className="text-[#61CE70]" size={40} />
+					<MdEmail className="text-[#89b02d]" size={40} />
 					<div>
 						<h1>Email</h1>
-						<p className="text-base">mustafiz8260@gmail.com</p>
+						<p className="text-base">avinashm0443@gmail.com</p>
 					</div>
 				</div>
 
 				<div className="flex gap-2 my-10 items-center text-2xl">
-					<FaHome className="text-[#61CE70]" size={40} />
+					<FaHome className="text-[#89b02d]" size={40} />
 					<div>
 						<h1>Permanent Address</h1> 
-						<p className="text-base">Rangpur, Bangladesh</p>
+						<p className="text-base"> Mangarshikoppa, Sorab, Karnataka - 577429</p>
 					</div>
 				</div>
 				<div className="flex gap-2 my-10 items-center text-2xl">
-					<FaLocationDot className="text-[#61CE70]" size={40} />
+					<FaLocationDot className="text-[#89b02d]" size={40} />
 					<div>
 						<h1>Present Address</h1> 
-						<p className="text-base">Mohammadpur, Dhaka, Bangladesh</p> {/* Changed example data for clarity */}
+						<p className="text-base">Mangarshikoppa, Sorab, Karnataka - 577429</p> {/* Changed example data for clarity */}
 					</div>
 				</div>
 
@@ -127,7 +136,7 @@ const Footer = () => {
 							placeholder="Full Name"
 							required
 							name="from_name"
-							className="input input-bordered w-full max-w-sm border-[#61CE70]"
+							className="input input-bordered w-full max-w-sm border-[#89b02d]"
 						/>
 						<input
 
@@ -135,17 +144,17 @@ const Footer = () => {
 							placeholder="Your Email"
 							name="from_email"
 							required
-							className="border-[#61CE70] input input-bordered w-full max-w-sm"
+							className="border-[#89b02d] input input-bordered w-full max-w-sm"
 						/>
 						<textarea
 
-							className="textarea h-40 border-[#61CE70] textarea-bordered w-full max-w-sm"
+							className="textarea h-40 border-[#89b02d] textarea-bordered w-full max-w-sm"
 							name="message"
 							placeholder="Your message"
 						></textarea>
 						<button
 							type="submit"
-							className="btn max-w-sm  btn-primary bg-[#61CE70] hover:bg-[#61CE70] "
+							className="btn max-w-sm  btn-primary bg-[#89b02d] hover:bg-[#89b02d] "
 						>
 							{" "}
 							{sendBtnMessage}

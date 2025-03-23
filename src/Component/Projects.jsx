@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 
 import BikroyElectronics from "../assets/websiteThumbnail/bikroyelectronics.webp"
+import Agile from "../assets/websiteThumbnail/Agile.png"
 import motionArt from "../assets/websiteThumbnail/motion-art.webp"
 import topicTrove from "../assets/websiteThumbnail/topic-trove.webp"
 import weddingHut from "../assets/websiteThumbnail/wedding-hut.webp"
@@ -22,57 +23,16 @@ const Projects = () => {
 
 	const Data = [
 		{
-			title: "BikroyElectronics",
-			description: "BikroyElectronics is a comprehensive e-commerce platform for selling and purchasing electronics. The site is designed with a user-friendly interface, secure transactions, and a range of features that enhance both user and admin experiences.",
-			thumbnailImage: BikroyElectronics,
+			title: "Agile Kanban Board",
+			description: "Developed a Kanban-based task management system using React.js, Firebase, HTML, CSS, and JavaScript to streamline workflow organization. The system features drag-and-drop functionality, allowing users to easily move tasks across different stages for better tracking. An interactive dashboard provides a clear overview of task progress, improving efficiency and task allocation",
+			thumbnailImage: Agile,
 			category: "FullStack",
-			clintLink: "https://github.com/Mustafiz82/BikroyElectronics",
-			serverLink: "https://github.com/Mustafiz82/BikroyElectronics-server",
-			LiveLInk: "https://bikroyelectronics.web.app/"
-
-		},
-		{
-			title: "Motion Art",
-			description: "Helivarse Motion Art is a sleek, modern website that showcases stunning motion graphics and animations. It offers a curated collection of visually engaging art, providing an immersive experience for design enthusiasts and creatives alike.",
-			thumbnailImage: motionArt,
-			category: "FrontEnd",
-			clintLink: "https://github.com/Mustafiz82/jobtask-Motion-art",
-			serverLink: "",
-			LiveLInk: "https://helivarse-motion-art.vercel.app/"
-
-		},
-		{
-			title: "Asset Hexa",
-			description: "This is a Team project that offers tools for money management, income/expense tracking, and investment in businesses. Users can write blogs, showcase businesses, and invest, while admins manage accounts and verify conten.",
-			thumbnailImage: assetHexa,
-			category: "FullStack",
-			clintLink: "https://github.com/NFRIDOY/asset-hexa",
-			serverLink: "https://github.com/NFRIDOY/Asset-Hexa-Server",
-			LiveLInk: "https://asset-hexa.web.app/"
+			clintLink: "https://github.com/Avinasha27/AlterOfficeTask",
+			// serverLink: "https://github.com/Mustafiz82/BikroyElectronics-server",
+			LiveLInk: "https://task1-89a11.web.app/"
 
 		},
 		
-		{
-			title: "Wedding Hut",
-			description: "The website features a welcoming homepage, secure user authentication with Google Sign-In, and private routes for logged-in users. It’s fully responsive with React AOS integration for smooth, engaging animations.",
-			thumbnailImage: weddingHut,
-			category: "FrontEnd",
-			clintLink: "https://github.com/Mustafiz82/Assignment-9-wedding-event-management",
-			serverLink: null,
-			LiveLInk: "https://wedding-hut-8caa8.web.app/"
-
-		},
-		
-		{
-			title: "TopicTrove",
-			description: "The website offers a welcoming homepage, secure user authentication with Google Sign-In, and features like post creation, editing, deletion, and comments. It’s fully responsive with efficient data storage.",
-			thumbnailImage: topicTrove,
-			category: "FullStack",
-			clintLink: "https://github.com/Mustafiz82/Assignment-12-TopicTrove-Clint-side-",
-			serverLink: "https://github.com/Mustafiz82/Assignment-12-TopicTrove-Server-side",
-			LiveLInk: "https://topic-trove.web.app/"
-
-		},
 	]
 
 
@@ -103,9 +63,9 @@ const Projects = () => {
 
 
 				<div className="flex flex-wrap bg-black justify-center gap-5">
-					<button onClick={() => setActiveButton("all Product")} className={` ${(activeButton == "all Product") ? "bg-[#61CE70] text-black" : ""}     btn lg:px-8 rounded-md  hover:bg-[#61CE70] hover:text-black btn-outline  hover:border-none text-[#61CE70]`}> All Projects</button>
-					<button onClick={() => setActiveButton("FrontEnd")} className={` ${(activeButton == "FrontEnd") ? "bg-[#61CE70] text-black" : ""}     btn lg:px-8 rounded-md  hover:bg-[#61CE70] hover:text-black btn-outline  hover:border-none text-[#61CE70]`}> Frontend Projects</button>
-					<button onClick={() => setActiveButton("Full Stack")} className={` ${(activeButton == "Full Stack") ? "bg-[#61CE70] text-black" : ""}     btn lg:px-8 rounded-md  hover:bg-[#61CE70] hover:text-black btn-outline  hover:border-none text-[#61CE70]`}> Full Stack Projects</button>
+					<button onClick={() => setActiveButton("all Product")} className={` ${(activeButton == "all Product") ? "bg-[#89b02d] text-black" : ""}     btn lg:px-8 rounded-md  hover:bg-[#89b02d] hover:text-black btn-outline  hover:border-none text-[#61CE70]`}> All Projects</button>
+					{/* <button onClick={() => setActiveButton("FrontEnd")} className={` ${(activeButton == "FrontEnd") ? "bg-[#61CE70] text-black" : ""}     btn lg:px-8 rounded-md  hover:bg-[#61CE70] hover:text-black btn-outline  hover:border-none text-[#61CE70]`}> Frontend Projects</button> */}
+					<button onClick={() => setActiveButton("Full Stack")} className={` ${(activeButton == "Full Stack") ? "bg-[#89b02d] text-black" : ""}     btn lg:px-8 rounded-md  hover:bg-[#89b02d] hover:text-black btn-outline  hover:border-none text-[#61CE70]`}> Full Stack Projects</button>
 
 
 				</div>
@@ -123,23 +83,23 @@ const Projects = () => {
 							</div>
 
 							<div className="lg:w-[450px] h-full">
-								<div className="min-h-[340px] bg-[#61CE70]/20 backdrop-blur-lg border border-white/20 shadow-lg p-6 rounded-lg">
-									<h1 className="text-4xl">{item?.title}</h1>
-									<p className="text-lg mt-5">{item?.description}</p>
+								<div className="min-h-[240px] bg-[#61CE70]/20 backdrop-blur-lg border border-white/20 shadow-lg p-6 rounded-lg">
+									<h1 className="text-2xl">{item?.title}</h1>
+									<p className="text-md mt-5">{item?.description}</p>
 								</div>
 								<div className="flex justify-between">
-									<Link to={item?.clintLink} className="btn hover:bg-[#4CAB58] flex-1 rounded-none text-black bg-[#61CE70]">
+									<Link to={item?.clintLink} className="btn hover:bg-[#4CAB58] flex-1 rounded-none text-black bg-[#89b02d]">
 										<FaGithub /> Client side
 									</Link>
 
 									{/* Conditionally render the Server side button */}
 									{item?.serverLink && (
-										<Link to={item?.serverLink} className="btn hover:bg-[#4CAB58] flex-1 rounded-none text-black bg-[#61CE70]">
+										<Link to={item?.serverLink} className="btn hover:bg-[#89b02d] flex-1 rounded-none text-black bg-[#89b02d]">
 											<FaGithub /> Server side
 										</Link>
 									)}
 
-									<Link to={item?.LiveLInk} className="btn hover:bg-[#4CAB58] flex-1 rounded-none text-black bg-[#61CE70]">
+									<Link to={item?.LiveLInk} className="btn hover:bg-[#89b02d] flex-1 rounded-none text-black bg-[#89b02d]">
 										<FaExternalLinkAlt /> Visit website
 									</Link>
 								</div>
