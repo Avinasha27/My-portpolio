@@ -8,6 +8,7 @@ import react from "../assets/icons/react.json"
 import nextjs from "../assets/icons/nextjs.webp"
 import github from "../assets/icons/github.png"
 import Boostaap from "../assets/icons/Boostaap.jpeg"
+import java from "../assets/icons/java.png"
 import Lottie from "lottie-react";
 
 const Skills = () => {
@@ -90,6 +91,12 @@ const Skills = () => {
 							<img src={Boostaap} className="h-full animateSkillImage  p-8 mx-auto" alt="" />
 						</div>
 						<h1 className="text-[#1a1a1a] font-bold p-2 text-center w-36 bg-[#89b02d]">Bootstrap</h1>
+					</div>
+					<div className="">
+						<div className="w-36 h-36  border-2 border-[#89b02d] ">
+							<img src={java} className="h-full animateSkillImage  p-8 mx-auto" alt="" />
+						</div>
+						<h1 className="text-[#1a1a1a] font-bold p-2 text-center w-36 bg-[#89b02d]">Java</h1>
 					</div>
 				</div>
 			</div>

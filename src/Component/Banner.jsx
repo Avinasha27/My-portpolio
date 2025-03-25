@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import { TypeAnimation } from "react-type-animation";
 import { FaStar } from "react-icons/fa6";
-// import pdf from "../assets/resume-of-mustafiz.pdf";
-import pdf from "../assets/DeveloperAvinash8.pdf"
+import pdf from "../assets/DeveloperAvinash10.pdf"
 
 import "./banner.css";
 import new2 from "../assets/new1.jpg"
@@ -16,7 +15,7 @@ const Banner = () => {
     setTimeout(() => {
       const link = document.createElement("a");
       link.href = pdf;
-      link.download = "DeveloperAvinash8.pdf";
+      link.download = "DeveloperAvinash10.pdf";
       link.click();
       setIsPreparing(false); // Reset loading state
     }, 1000); // Adjust delay as needed
@@ -52,15 +51,51 @@ const Banner = () => {
           <p className="text-justify pb-5 ">
             I'm a passionate Frontend Developer with expertise in HTML, CSS, JavaScript, and React. I love crafting visually appealing and user-friendly web experiences. With a keen eye for design and strong technical skills, I ensure seamless, responsive, and engaging interfaces
           </p>
-
-
           <button
             onClick={handleDownload}
             data-aos="zoom-in"
-            className="btn mt-5 btn-outline text-[#89b02d] hover:bg-[#89b02d] hover:text-black "
+            className="relative btn mt-5 btn-outline text-[#89b02d] hover:bg-[#89b02d] hover:text-black border-2 border-[#89b02d] overflow-hidden"
           >
             {isPreparing ? "Preparing to download..." : "Download Resume"}
+
+            {/* Animated border */}
+            <span className="absolute inset-0 border-2 border-pink-500 
+    animate-[border-rotate_3s_linear_infinite]"></span>
+
+            {/* Shine effect */}
+            <span className="absolute inset-0 bg-gradient-to-r from-transparent via-pink-500/30 to-transparent 
+    animate-[shine_2s_infinite]"></span>
           </button>
+
+          {/* Global CSS for animations */}
+          <style jsx>{`
+  @keyframes border-rotate {
+    0% { 
+      clip-path: inset(0 0 0 0);
+    }
+    25% { 
+      clip-path: inset(0 0 0 100%);
+    }
+    50% { 
+      clip-path: inset(100% 0 0 0);
+    }
+    75% { 
+      clip-path: inset(0 100% 0 0);
+    }
+    100% { 
+      clip-path: inset(0 0 0 0);
+    }
+  }
+
+  @keyframes shine {
+    0% { 
+      transform: translateX(-100%);
+    }
+    100% { 
+      transform: translateX(100%);
+    }
+  }
+`}</style>
         </div>
         <div className="mt-[143px] lg:mt-0">
           <div

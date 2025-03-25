@@ -126,10 +126,10 @@ const Footer = () => {
 
 			</div>
 
-			<div className="md:w-1/3 ">
+			<div className="md:w-1/3  ">
 				<h1 className="text-3xl font-bold my-5">Send me Email </h1>
 				<form ref={form} onSubmit={sendEmail}>
-					<div className="flex  overflow-hidden flex-col gap-10">
+					<div className="flex  overflow-hidden flex-col gap-10 mt-[46px]">
 						<input
 
 							type="text"

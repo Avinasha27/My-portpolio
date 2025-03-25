@@ -23,9 +23,9 @@ const Experience = () => {
                     </div>
                     <div className='w-full md:w-3/4  lg:w-2/3 md:p-5 lg:p-10 max-w-3xl rounded-3xl shadow-lg'>
                         <h1 className='text-2xl md:text-3xl font-extrabold text-white'>Software Engineer I, Frontend</h1>
-                        <h2 className='text-lg hidden md:block my-3 font-medium text-gray-300'>7EDGE | March 2024 – February 2025 (11 months)</h2>
+                        <h2 className='text-lg hidden md:block my-3 font-medium text-gray-300'>7EDGE | March 2024 – February 2025</h2>
 
-                        <h2 className='my-2 lg:hidden text-lg'>7EDGE | March 2024 – February 2025</h2>
+                        <h2 className='my-2 lg:hidden md:hidden text-lg'>7EDGE | March 2024 – February 2025</h2>
 
                         {/* for large device  */}
                         <ul className='list-disc hidden lg:block mt-5 md:ml-5 space-y-3  md:pl-5'>
@@ -186,9 +186,9 @@ const Experience = () => {
                     </div>
                     <div className='w-full md:w-3/4  lg:w-2/3 md:p-5 lg:p-10 max-w-3xl rounded-3xl shadow-lg'>
                         <h1 className='text-2xl md:text-3xl font-extrabold text-white'>Java Full Stack development - Internship</h1>
-                        <h2 className='text-lg hidden md:block my-3 font-medium text-gray-300'>TECHSHRESHTA | August 2023 – September 2023 (1 month)</h2>
+                        <h2 className='text-lg hidden md:block my-3 font-medium text-gray-300'>TECHSHRESHTA | August 2023 – September 2023</h2>
 
-                        <h2 className='my-2 lg:hidden text-lg'>TECHSHRESHTA | August 2023 – September 2023 (1 month)</h2>
+                        <h2 className='my-2 lg:hidden md:hidden text-lg'>TECHSHRESHTA | August 2023 – September 2023</h2>
 
                         {/* for large device  */}
                         <ul className='list-disc hidden lg:block mt-5 md:ml-5 space-y-3  md:pl-5'>
@@ -280,9 +280,9 @@ const Experience = () => {
                     </div>
                     <div className='w-full md:w-3/4  lg:w-2/3 md:p-5 lg:p-10 max-w-3xl rounded-3xl shadow-lg'>
                         <h1 className='text-2xl md:text-3xl font-extrabold text-white'>Java & SQL - Internship</h1>
-                        <h2 className='text-lg hidden md:block my-3 font-medium text-gray-300'>QSPIDERS | june 2023 – july 2023 (1 month)</h2>
+                        <h2 className='text-lg hidden md:block my-3 font-medium text-gray-300'>QSPIDERS | june 2023 – july 2023</h2>
 
-                        <h2 className='my-2 lg:hidden text-lg'>QSPIDERS | june 2023 – july 2023 (1 month)</h2>
+                        <h2 className='my-2 lg:hidden md:hidden text-lg'>QSPIDERS | june 2023 – july 2023</h2>
 
                         {/* for large device  */}
                         <ul className='list-disc hidden lg:block mt-5 md:ml-5 space-y-3  md:pl-5'>

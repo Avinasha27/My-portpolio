@@ -8,7 +8,7 @@ const AboutMe = () => {
 
 
     return (
-        <div id="About" className='py-20 lg:py-10 lg:p-10'>
+        <div id="About" className='py-20 lg:py-10 lg:p-10 mt-[60px]'>
             <div className='text-center my-10 lg:my-0'>
                 <h1 className='text-2xl md:text-4xl lg:text-5xl mb-4'>About Me</h1>
                 <p className='text-2xl md:text-4xl pb-10 lg:pb-0 lg:text-5xl text-[#89b02d]'>-----who I am ------</p>
